@@ -24,3 +24,13 @@ REST-ful web service -> data is written directly to HTTP response as JSON
 java -jar target/name-of-project-0.1.0.jar \\ run the jar file 
 ```
 
+## Consuming a REST-ful Web Service
+
+- `RestTemplate` is used for consuming a REST-ful web service, binding the returned data to a domain model;
+- `@JsonIgnoreProperties` -> any properties not bound in the class model should be ignored;
+- `@JsonProperty` is used for binding model properties, if the attributes defined in the class model don't match the fetched data;
+- `CommandLineRunner` is a simple Spring Boot interface with a run method. Spring Boot will automatically call the run method of all beans implementing this interface after the application context has been loaded.
+
+
+
+
